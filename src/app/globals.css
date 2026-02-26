@@ -1,26 +1,78 @@
 @import "tailwindcss";
 
+/* themeColors from siteConfig.ts */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #FACC15;
+  --secondary: #475569;
+  --accent: #F97316;
+  --background: #FFFBEB;
+  --card: #FFFFFF;
+  --subText: #94A3B8;
 }
 
 @theme inline {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card: var(--card);
+  --color-subText: var(--subText);
+  --font-sans: var(--font-zen-maru-gothic);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* 水彩画風・紙の質感（微細なノイズ） */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+  color: var(--secondary);
+  position: relative;
 }
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* 色付き影（ゆず色・オレンジ） */
+.shadow-glow-primary {
+  box-shadow: 0 10px 40px -10px rgba(250, 204, 21, 0.35),
+              0 25px 50px -12px rgba(250, 204, 21, 0.2);
+}
+
+.shadow-glow-accent {
+  box-shadow: 0 10px 40px -10px rgba(249, 115, 22, 0.3),
+              0 25px 50px -12px rgba(249, 115, 22, 0.15);
+}
+
+.shadow-glow-hover {
+  box-shadow: 0 10px 40px -10px rgba(250, 204, 21, 0.4),
+              0 30px 60px -15px rgba(249, 115, 22, 0.3);
+}
+
+/* オレンジ発光影 */
+.shadow-orange-100 {
+  box-shadow: 0 4px 14px -2px rgba(249, 115, 22, 0.25),
+              0 12px 28px -4px rgba(249, 115, 22, 0.15);
+}
+
+.shadow-orange-200 {
+  box-shadow: 0 10px 40px -10px rgba(249, 115, 22, 0.35),
+              0 25px 50px -12px rgba(249, 115, 22, 0.25);
+}
+
+/* デバイスモックアップ用：リアルで柔らかい広がる影 */
+.shadow-device-float {
+  box-shadow: 0 25px 50px -12px rgba(249, 115, 22, 0.4),
+              0 16px 32px -16px rgba(250, 204, 21, 0.25),
+              0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-device-float-strong {
+  box-shadow: 0 32px 64px -12px rgba(249, 115, 22, 0.45),
+              0 20px 40px -16px rgba(250, 204, 21, 0.3),
+              0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
