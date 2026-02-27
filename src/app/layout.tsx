@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Zen_Maru_Gothic } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { siteConfig } from "@/constants/siteConfig";
 import "./globals.css";
 
@@ -51,6 +53,8 @@ export default function RootLayout({
         className={`${zenMaruGothic.variable} font-sans antialiased`}
       >
         {children}
+        <Analytics />
+        <SpeedInsights />
         <GoogleAnalytics gaId={siteConfig.googleAnalyticsId} />
       </body>
     </html>
