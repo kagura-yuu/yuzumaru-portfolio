@@ -12,7 +12,7 @@ export const siteConfig = {
   creatorName: "ゆずまる",
   title: "YuzumaruWorks",
   description: "QA Engineer & Creator Portfolio | 品質と温かみのあるモノづくり",
-  url: "https://yuzumaru-works.vercel.app",
+  url: "https://yuzumaru-works.com",
   keywords: ["QA Engineer", "Web制作", "Next.js", "LINEスタンプ", "ゆずまる", "Yuzumaru", "ポートフォリオ"],
   googleAnalyticsId: "G-XXXXXXXXXX",
   sns: {

@@ -63,6 +63,30 @@ body::before {
               0 25px 50px -12px rgba(249, 115, 22, 0.25);
 }
 
+/* 柚子アイコン用：ふわふわ浮遊アニメーション */
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-float-y {
+  animation: float-y 2.5s ease-in-out infinite;
+}
+
+/* 横スクロール時にスクロールバーを非表示（タッチ操作は有効） */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 /* デバイスモックアップ用：リアルで柔らかい広がる影 */
 .shadow-device-float {
   box-shadow: 0 25px 50px -12px rgba(249, 115, 22, 0.4),

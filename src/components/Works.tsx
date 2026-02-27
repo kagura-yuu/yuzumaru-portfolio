@@ -1,5 +1,4 @@
-"use client";
-
+import Image from "next/image";
 import { siteConfig, themeColors } from "@/constants/siteConfig";
 import { FaExternalLinkAlt, FaQuoteLeft } from "react-icons/fa";
 
@@ -17,32 +16,31 @@ export const Works = () => {
           制作実績
         </h2>
 
-        {/* メイングリッド：左（画像） / 右（テキスト） */}
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
-          {/* ▼ 左カラム：デバイスモックアップエリア ▼ */}
           <div className="relative group">
-            {/* PC Mockup Container */}
             <div className="relative z-10 w-full aspect-[16/10] rounded-lg border-[8px] border-gray-900 bg-gray-900 shadow-2xl md:border-[12px]">
               <div className="relative h-full w-full overflow-hidden rounded bg-white">
-                <img
+                <Image
                   src={pcSrc}
                   alt="Piano School LP PC"
-                  className="h-full w-full object-cover object-top"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
             </div>
-            {/* Phone Mockup Container (PCの右下に重ねる) */}
             <div className="absolute -bottom-[10%] -right-[2%] z-20 w-[28%] aspect-[9/19] rounded-[1.5rem] border-[6px] border-gray-900 bg-gray-900 shadow-2xl transition-transform duration-500 ease-out group-hover:-translate-y-4">
               <div className="relative h-full w-full overflow-hidden rounded-[1.2rem] bg-white">
-                <img
+                <Image
                   src="/works/piano-lp-sp.jpg"
                   alt="Piano School LP SP"
-                  className="h-full w-full object-cover object-top"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 1024px) 28vw, 14vw"
                 />
               </div>
             </div>
 
-            {/* 背景装飾 */}
             <div className="absolute -bottom-10 -left-10 -z-10 h-full w-full scale-110 rounded-full bg-yellow-100/60 opacity-50 mix-blend-multiply blur-3xl" />
           </div>
 
@@ -91,8 +89,8 @@ export const Works = () => {
               <div className="relative z-10 space-y-4">
                 {/* ヘッダー */}
                 <div className="mb-4 flex items-center gap-3 border-b border-green-200 pb-3">
-                  <div className="h-8 w-8 shrink-0">
-                    <img src="/works/line-icon.png" alt="LINE" className="h-full w-full object-contain" />
+                  <div className="relative h-8 w-8 shrink-0">
+                    <Image src="/works/line-icon.webp" alt="LINE" fill className="object-contain" sizes="32px" />
                   </div>
                   <h4
                     className="font-bold text-green-800"
@@ -102,11 +100,13 @@ export const Works = () => {
                   </h4>
                 </div>
                 <div className="flex flex-col items-start gap-5 sm:flex-row">
-                  <div className="w-full shrink-0 overflow-hidden rounded-lg border border-green-100 shadow-md sm:w-1/3">
-                    <img
+                  <div className="relative aspect-[3/2] w-full shrink-0 overflow-hidden rounded-lg border border-green-100 shadow-md sm:w-1/3">
+                    <Image
                       src="/works/piano-line-richmenu.jpg"
                       alt="Rich Menu"
-                      className="h-auto w-full object-cover"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 640px) 100vw, 33vw"
                     />
                   </div>
                   <div className="flex-1 space-y-2 text-sm leading-relaxed text-green-900">

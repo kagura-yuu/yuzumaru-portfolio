@@ -16,27 +16,27 @@ export function StampGrid() {
   }
 
   return (
-    <div className="flex flex-col items-center gap-8">
-      <div className="relative mx-auto max-w-5xl">
-        <div className="relative z-10 flex items-center gap-2 rounded-t-2xl bg-gray-800 p-4 shadow-2xl">
-          <div className="h-3 w-3 rounded-full bg-red-500" />
-          <div className="h-3 w-3 rounded-full bg-yellow-500" />
-          <div className="h-3 w-3 rounded-full bg-green-500" />
-          <div className="ml-4 flex h-6 flex-1 items-center overflow-hidden whitespace-nowrap rounded-md bg-gray-700 px-3 font-mono text-[10px] text-gray-300 opacity-50">
+    <div className="flex w-full max-w-full flex-col items-center gap-8 overflow-hidden">
+      <div className="relative w-full max-w-full min-w-0">
+        <div className="relative z-10 flex min-w-0 items-center gap-2 rounded-t-2xl bg-gray-800 p-3 shadow-2xl sm:p-4">
+          <div className="h-2.5 w-2.5 shrink-0 rounded-full bg-red-500 sm:h-3 sm:w-3" />
+          <div className="h-2.5 w-2.5 shrink-0 rounded-full bg-yellow-500 sm:h-3 sm:w-3" />
+          <div className="h-2.5 w-2.5 shrink-0 rounded-full bg-green-500 sm:h-3 sm:w-3" />
+          <div className="ml-2 min-w-0 flex-1 overflow-hidden truncate rounded-md bg-gray-700 px-2 py-1.5 font-mono text-[9px] text-gray-300 opacity-50 sm:ml-4 sm:px-3 sm:py-2 sm:text-[10px]">
             https://store.line.me/stickershop/author/5966269/ja
           </div>
         </div>
-        <div className="relative overflow-hidden rounded-b-2xl border-x-4 border-b-4 border-gray-800 bg-gray-100 shadow-2xl">
-          <div className="scrollbar-hide flex overflow-x-auto overflow-y-hidden snap-x snap-mandatory gap-6 px-4 py-8 md:gap-10 md:px-8">
+        <div className="relative min-w-0 overflow-hidden rounded-b-2xl border-x-4 border-b-4 border-gray-800 bg-gray-100 shadow-2xl">
+          <div className="scrollbar-hide flex min-w-0 overflow-x-auto overflow-y-hidden snap-x snap-mandatory gap-4 px-3 py-6 md:gap-6 md:px-4 md:py-8">
             {stamps.map((stamp) => (
-              <div key={stamp.id} className="shrink-0 snap-center first:pl-4 last:pr-4">
+              <div key={stamp.id} className="shrink-0 snap-center first:pl-2 last:pr-2 md:first:pl-4 md:last:pr-4">
                 <Link
                   href={stamp.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group relative block"
                 >
-                  <div className="w-[280px] overflow-hidden rounded-2xl bg-white shadow-lg transition-transform duration-300 group-hover:-translate-y-2 group-hover:shadow-2xl md:w-[360px]">
+                  <div className="w-[240px] overflow-hidden rounded-2xl bg-white shadow-lg transition-transform duration-300 group-hover:-translate-y-2 group-hover:shadow-2xl sm:w-[280px] md:w-[360px]">
                     <div className="relative aspect-[4/3] overflow-hidden bg-gray-50">
                       <div className="absolute inset-0 z-10 flex items-center justify-center bg-black/0 transition-colors group-hover:bg-black/10">
                         <span className="translate-y-4 rounded-full bg-white/90 px-6 py-2 font-bold text-orange-500 shadow-lg opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">

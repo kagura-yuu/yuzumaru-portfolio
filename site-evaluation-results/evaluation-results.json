@@ -1,0 +1,412 @@
+{
+  "timestamp": "2026-02-27T06:44:04.350Z",
+  "tests": [
+    {
+      "name": "Desktop View (1280px)",
+      "viewport": "1280x720",
+      "hasHorizontalScroll": false,
+      "screenshot": "01-desktop-full.png"
+    },
+    {
+      "name": "Page Sections Check",
+      "sections": {
+        "Hero": false,
+        "AboutMe": false,
+        "LINE stamps": false,
+        "Works": true,
+        "AppDev": false,
+        "Footer": false
+      }
+    },
+    {
+      "name": "Tablet View (768px)",
+      "viewport": "768x1024",
+      "hasHorizontalScroll": false,
+      "screenshot": "02-tablet-full.png"
+    },
+    {
+      "name": "Mobile View (375px)",
+      "viewport": "375x667",
+      "hasHorizontalScroll": false,
+      "screenshot": "03-mobile-full.png"
+    },
+    {
+      "name": "Image Loading Test",
+      "totalImages": 21,
+      "loadedImages": 7,
+      "brokenImages": 0,
+      "details": [
+        {
+          "src": "http://localhost:3000/hero/profile.webp",
+          "alt": "ゆずまる",
+          "naturalWidth": 640,
+          "naturalHeight": 349,
+          "complete": true,
+          "hasError": false
+        },
+        {
+          "src": "http://localhost:3000/hero/profile.webp",
+          "alt": "Yuzumaru",
+          "naturalWidth": 640,
+          "naturalHeight": 349,
+          "complete": true,
+          "hasError": false
+        },
+        {
+          "src": "http://localhost:3000/profile-yuzu-transparent.webp",
+          "alt": "",
+          "naturalWidth": 128,
+          "naturalHeight": 128,
+          "complete": true,
+          "hasError": false
+        },
+        {
+          "src": "http://localhost:3000/stamps/yuzumaru_daily_greetings_family_preview.png",
+          "alt": "ゆずまるの日常【挨拶・家族編】",
+          "naturalWidth": 968,
+          "naturalHeight": 901,
+          "complete": true,
+          "hasError": false
+        },
+        {
+          "src": "http://localhost:3000/stamps/33083966_preview.png",
+          "alt": "ゆずまるの日常【リモート・仕事編】",
+          "naturalWidth": 710,
+          "naturalHeight": 704,
+          "complete": true,
+          "hasError": false
+        },
+        {
+          "src": "http://localhost:3000/stamps/33073247_preview.png",
+          "alt": "無気力なミアちゃん【ドット絵編】",
+          "naturalWidth": 710,
+          "naturalHeight": 704,
+          "complete": true,
+          "hasError": false
+        },
+        {
+          "src": "http://localhost:3000/stamps/33061932_preview.png",
+          "alt": "限界ITエンジニアの日常【開発者・異世界】",
+          "naturalWidth": 710,
+          "naturalHeight": 704,
+          "complete": true,
+          "hasError": false
+        },
+        {
+          "src": "http://localhost:3000/stamps/33061803_preview.png",
+          "alt": "音大生の日常 2【声楽と副科ピアノ】",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "complete": false,
+          "hasError": false
+        },
+        {
+          "src": "http://localhost:3000/stamps/33060987_preview.png",
+          "alt": "シュウの日常２ ～いぬのしぐさ～",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "complete": false,
+          "hasError": false
+        },
+        {
+          "src": "http://localhost:3000/stamps/33055065_preview.png",
+          "alt": "歌う音大生の日常【声楽・合唱・オペラ】",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "complete": false,
+          "hasError": false
+        },
+        {
+          "src": "http://localhost:3000/stamps/33055092_preview.png",
+          "alt": "歌う音大生の日常 2【レッスン・喉ケア編】",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "complete": false,
+          "hasError": false
+        },
+        {
+          "src": "http://localhost:3000/stamps/33053639_preview.png",
+          "alt": "音大生の日常【授業・練習編】",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "complete": false,
+          "hasError": false
+        },
+        {
+          "src": "http://localhost:3000/stamps/33052402_preview.png",
+          "alt": "毎日がんばるパパの日常",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "complete": false,
+          "hasError": false
+        },
+        {
+          "src": "http://localhost:3000/stamps/33052401_preview.png",
+          "alt": "毎日がんばるママの日常",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "complete": false,
+          "hasError": false
+        },
+        {
+          "src": "http://localhost:3000/stamps/33051614_preview.png",
+          "alt": "シュウの日常【ミニチュアシュナウザー】",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "complete": false,
+          "hasError": false
+        },
+        {
+          "src": "http://localhost:3000/stamps/33049380_preview.png",
+          "alt": "大人かわいい♡ピアノの先生の日常スタンプ",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "complete": false,
+          "hasError": false
+        },
+        {
+          "src": "http://localhost:3000/stamps/33047498_preview.png",
+          "alt": "無気力なミアちゃん【異世界編】",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "complete": false,
+          "hasError": false
+        },
+        {
+          "src": "http://localhost:3000/works/piano-lp-pc.png",
+          "alt": "Piano School LP PC",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "complete": false,
+          "hasError": false
+        },
+        {
+          "src": "http://localhost:3000/works/piano-lp-sp.jpg",
+          "alt": "Piano School LP SP",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "complete": false,
+          "hasError": false
+        },
+        {
+          "src": "http://localhost:3000/works/line-icon.webp",
+          "alt": "LINE",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "complete": false,
+          "hasError": false
+        },
+        {
+          "src": "http://localhost:3000/works/piano-line-richmenu.jpg",
+          "alt": "Rich Menu",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "complete": false,
+          "hasError": false
+        }
+      ]
+    },
+    {
+      "name": "Link Functionality Test",
+      "totalLinks": 26,
+      "details": [
+        {
+          "text": "制作秘話をNoteで読む",
+          "href": "https://note.com/yuzumaru_works",
+          "hasHref": true,
+          "target": "_blank",
+          "isExternal": true
+        },
+        {
+          "text": "X (Twitter)",
+          "href": "https://x.com/YuzumaruWorks",
+          "hasHref": true,
+          "target": "_blank",
+          "isExternal": true
+        },
+        {
+          "text": "ストアを見る\nゆずまるの日常【挨拶・家族編】",
+          "href": "https://store.line.me/stickershop/product/33083974/ja",
+          "hasHref": true,
+          "target": "_blank",
+          "isExternal": true
+        },
+        {
+          "text": "ストアを見る\nゆずまるの日常【リモート・仕事編】",
+          "href": "https://store.line.me/stickershop/product/33083966/ja",
+          "hasHref": true,
+          "target": "_blank",
+          "isExternal": true
+        },
+        {
+          "text": "ストアを見る\n無気力なミアちゃん【ドット絵編】",
+          "href": "https://store.line.me/stickershop/product/33073247/ja",
+          "hasHref": true,
+          "target": "_blank",
+          "isExternal": true
+        },
+        {
+          "text": "ストアを見る\n限界ITエンジニアの日常【開発者・異世界】",
+          "href": "https://store.line.me/stickershop/product/33061932/ja",
+          "hasHref": true,
+          "target": "_blank",
+          "isExternal": true
+        },
+        {
+          "text": "ストアを見る\n音大生の日常 2【声楽と副科ピアノ】",
+          "href": "https://store.line.me/stickershop/product/33061803/ja",
+          "hasHref": true,
+          "target": "_blank",
+          "isExternal": true
+        },
+        {
+          "text": "ストアを見る\nシュウの日常２ ～いぬのしぐさ～",
+          "href": "https://store.line.me/stickershop/product/33060987/ja",
+          "hasHref": true,
+          "target": "_blank",
+          "isExternal": true
+        },
+        {
+          "text": "ストアを見る\n歌う音大生の日常【声楽・合唱・オペラ】",
+          "href": "https://store.line.me/stickershop/product/33055065/ja",
+          "hasHref": true,
+          "target": "_blank",
+          "isExternal": true
+        },
+        {
+          "text": "ストアを見る\n歌う音大生の日常 2【レッスン・喉ケア編】",
+          "href": "https://store.line.me/stickershop/product/33055092/ja",
+          "hasHref": true,
+          "target": "_blank",
+          "isExternal": true
+        },
+        {
+          "text": "ストアを見る\n音大生の日常【授業・練習編】",
+          "href": "https://store.line.me/stickershop/product/33053639/ja",
+          "hasHref": true,
+          "target": "_blank",
+          "isExternal": true
+        },
+        {
+          "text": "ストアを見る\n毎日がんばるパパの日常",
+          "href": "https://store.line.me/stickershop/product/33052402/ja",
+          "hasHref": true,
+          "target": "_blank",
+          "isExternal": true
+        },
+        {
+          "text": "ストアを見る\n毎日がんばるママの日常",
+          "href": "https://store.line.me/stickershop/product/33052401/ja",
+          "hasHref": true,
+          "target": "_blank",
+          "isExternal": true
+        },
+        {
+          "text": "ストアを見る\nシュウの日常【ミニチュアシュナウザー】",
+          "href": "https://store.line.me/stickershop/product/33051614/ja",
+          "hasHref": true,
+          "target": "_blank",
+          "isExternal": true
+        },
+        {
+          "text": "ストアを見る\n大人かわいい♡ピアノの先生の日常スタンプ",
+          "href": "https://store.line.me/stickershop/product/33049380/ja",
+          "hasHref": true,
+          "target": "_blank",
+          "isExternal": true
+        },
+        {
+          "text": "ストアを見る\n無気力なミアちゃん【異世界編】",
+          "href": "https://store.line.me/stickershop/product/33047498/ja",
+          "hasHref": true,
+          "target": "_blank",
+          "isExternal": true
+        },
+        {
+          "text": "LINEストアで全作品を見る",
+          "href": "https://store.line.me/stickershop/author/5966269/ja",
+          "hasHref": true,
+          "target": "_blank",
+          "isExternal": true
+        },
+        {
+          "text": "実際のサイトを見る",
+          "href": "https://tanakakumiko-music-school.com/",
+          "hasHref": true,
+          "target": "_blank",
+          "isExternal": true
+        },
+        {
+          "text": "X (Twitter) でメッセージを送る",
+          "href": "https://x.com/YuzumaruWorks",
+          "hasHref": true,
+          "target": "_blank",
+          "isExternal": true
+        },
+        {
+          "text": "Profile",
+          "href": "http://localhost:3000/#about",
+          "hasHref": true,
+          "target": "",
+          "isExternal": false
+        },
+        {
+          "text": "Stamps",
+          "href": "http://localhost:3000/#stamps",
+          "hasHref": true,
+          "target": "",
+          "isExternal": false
+        },
+        {
+          "text": "Works",
+          "href": "http://localhost:3000/#works",
+          "hasHref": true,
+          "target": "",
+          "isExternal": false
+        },
+        {
+          "text": "Contact",
+          "href": "http://localhost:3000/#contact",
+          "hasHref": true,
+          "target": "",
+          "isExternal": false
+        },
+        {
+          "text": "",
+          "href": "https://x.com/YuzumaruWorks",
+          "hasHref": true,
+          "target": "_blank",
+          "isExternal": true
+        },
+        {
+          "text": "",
+          "href": "https://note.com/yuzumaru_works",
+          "hasHref": true,
+          "target": "_blank",
+          "isExternal": true
+        },
+        {
+          "text": "",
+          "href": "https://github.com/kagura-yuu",
+          "hasHref": true,
+          "target": "_blank",
+          "isExternal": true
+        }
+      ]
+    },
+    {
+      "name": "Console Errors Check",
+      "errorCount": 0,
+      "errors": []
+    },
+    {
+      "name": "Performance Metrics",
+      "metrics": {
+        "domContentLoaded": 0.3999999761581421,
+        "loadComplete": 0,
+        "domInteractive": 325.10000002384186,
+        "transferSize": 44745
+      }
+    }
+  ]
+}

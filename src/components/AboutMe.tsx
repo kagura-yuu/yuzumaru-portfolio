@@ -11,23 +11,20 @@ export const AboutMe = () => {
           <div className="relative shrink-0 group">
             <div className="h-48 w-48 overflow-hidden rounded-full border-[6px] border-white bg-yellow-100 shadow-xl transition-transform duration-500 group-hover:scale-105 md:h-56 md:w-56">
               <Image
-                src="/hero/profile.png"
+                src="/hero/profile.webp"
                 alt="Yuzumaru"
                 width={224}
                 height={224}
                 className="h-full w-full object-cover"
               />
             </div>
-            <div
-              className="absolute -bottom-2 -right-2 drop-shadow-md"
-              style={{ animation: "bounce 2s ease-in-out infinite" }}
-            >
+            <div className="absolute -bottom-2 -right-2 drop-shadow-md animate-float-y">
               <Image
-                src="/profile-yuzu-transparent.png"
+                src="/profile-yuzu-transparent.webp"
                 alt=""
-                width={48}
-                height={48}
-                className="h-12 w-12 object-contain"
+                width={64}
+                height={64}
+                className="h-14 w-14 object-contain sm:h-16 sm:w-16"
                 aria-hidden
               />
             </div>
