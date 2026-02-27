@@ -88,29 +88,23 @@ export const Works = () => {
               <div className="absolute top-0 right-0 w-32 h-32 bg-green-200 rounded-full mix-blend-multiply blur-2xl opacity-50 translate-x-1/2 -translate-y-1/2" />
 
               {/* コンテンツエリア：画像とテキスト */}
-              <div className="relative z-10 flex flex-col md:flex-row gap-8 items-center md:items-start">
+              <div className="relative z-10 flex flex-col md:flex-row gap-8 items-center md:items-start min-w-0">
                 {/* ▼ スマホ画面風の画像エリア ▼ */}
-                <div className="w-[260px] md:w-[280px] shrink-0 bg-white rounded-3xl border-[8px] border-gray-800 shadow-xl overflow-hidden flex flex-col">
-                  {/* 上部：チャット画面（少し高さを制限してトリミング） */}
-                  <div className="h-[240px] w-full bg-slate-100 relative overflow-hidden border-b border-gray-100">
-                    <img
-                      src="/works/piano-line-chat.jpg"
-                      alt="LINE Chat"
-                      className="w-full h-full object-cover object-top"
-                    />
-                  </div>
-                  {/* 下部：リッチメニュー（ここを魅せる！） */}
-                  <div className="w-full relative">
+                <div className="w-[260px] sm:w-[280px] shrink-0 bg-white rounded-3xl border-[8px] border-gray-800 shadow-xl overflow-hidden flex flex-col self-center md:self-start">
+                  {/* チャット＋リッチメニュー（1枚のスクリーンショットをフル表示） */}
+                  <div className="w-full bg-slate-100">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="/works/piano-line-richmenu.jpg"
-                      alt="Rich Menu"
-                      className="w-full h-auto block"
+                      alt="LINE公式アカウント（チャット・リッチメニュー）"
+                      className="w-full h-auto block align-top"
+                      loading="lazy"
                     />
                   </div>
                 </div>
 
                 {/* テキストエリア */}
-                <div className="flex-1 space-y-4 text-green-900">
+                <div className="flex-1 min-w-0 space-y-4 text-green-900">
                   <h5 className="font-bold text-lg text-green-800" style={{ fontFamily: "var(--font-zen-maru-gothic)" }}>
                     「メニューをタップするだけ」の体験を設計
                   </h5>
