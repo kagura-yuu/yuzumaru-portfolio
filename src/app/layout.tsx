@@ -37,8 +37,8 @@ export const metadata: Metadata = {
     creator: "@YuzumaruWorks",
   },
   icons: {
-    icon: "/favicon.ico",
-    apple: "/favicon.ico",
+    icon: "/icon.png",
+    apple: "/icon.png",
   },
 };
 

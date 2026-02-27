@@ -82,42 +82,56 @@ export const Works = () => {
               </a>
             </div>
 
-            {/* LINE連携ブロック (緑枠) */}
-            <div className="relative overflow-hidden rounded-2xl border border-green-200 bg-green-50/80 p-6 shadow-sm">
+            {/* LINE連携ブロック */}
+            <div className="bg-green-50/80 rounded-2xl p-6 md:p-8 border border-green-200 shadow-sm relative overflow-hidden mt-10">
               {/* 背景装飾 */}
-              <div className="absolute right-0 top-0 h-24 w-24 rounded-full bg-green-200 opacity-50 mix-blend-overlay blur-xl" />
-              <div className="relative z-10 space-y-4">
-                {/* ヘッダー */}
-                <div className="mb-4 flex items-center gap-3 border-b border-green-200 pb-3">
-                  <div className="relative h-8 w-8 shrink-0">
-                    <Image src="/works/line-icon.webp" alt="LINE" fill className="object-contain" sizes="32px" />
-                  </div>
-                  <h4
-                    className="font-bold text-green-800"
-                    style={{ fontFamily: "var(--font-zen-maru-gothic)" }}
-                  >
-                    LINE公式アカウント導入支援
-                  </h4>
-                </div>
-                <div className="flex flex-col items-start gap-5 sm:flex-row">
-                  <div className="relative aspect-[3/2] w-full shrink-0 overflow-hidden rounded-lg border border-green-100 shadow-md sm:w-1/3">
-                    <Image
-                      src="/works/piano-line-richmenu.jpg"
-                      alt="Rich Menu"
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 640px) 100vw, 33vw"
+              <div className="absolute top-0 right-0 w-32 h-32 bg-green-200 rounded-full mix-blend-multiply blur-2xl opacity-50 translate-x-1/2 -translate-y-1/2" />
+
+              {/* コンテンツエリア：画像とテキスト */}
+              <div className="relative z-10 flex flex-col md:flex-row gap-8 items-center md:items-start">
+                {/* ▼ スマホ画面風の画像エリア ▼ */}
+                <div className="w-[260px] md:w-[280px] shrink-0 bg-white rounded-3xl border-[8px] border-gray-800 shadow-xl overflow-hidden flex flex-col">
+                  {/* 上部：チャット画面（少し高さを制限してトリミング） */}
+                  <div className="h-[240px] w-full bg-slate-100 relative overflow-hidden border-b border-gray-100">
+                    <img
+                      src="/works/piano-line-chat.jpg"
+                      alt="LINE Chat"
+                      className="w-full h-full object-cover object-top"
                     />
                   </div>
-                  <div className="flex-1 space-y-2 text-sm leading-relaxed text-green-900">
-                    <p>
-                      お問い合わせのハードルを下げるため、LINE公式アカウントを導入。Webサイトと連携させ、集客動線を構築しました。
-                    </p>
-                    <ul className="list-outside list-disc pl-4 text-xs text-green-800 opacity-90">
-                      <li>体験レッスン予約へスムーズに誘導</li>
-                      <li>迷わず使えるリッチメニューを作成</li>
-                    </ul>
+                  {/* 下部：リッチメニュー（ここを魅せる！） */}
+                  <div className="w-full relative">
+                    <img
+                      src="/works/piano-line-richmenu.jpg"
+                      alt="Rich Menu"
+                      className="w-full h-auto block"
+                    />
                   </div>
+                </div>
+
+                {/* テキストエリア */}
+                <div className="flex-1 space-y-4 text-green-900">
+                  <h5 className="font-bold text-lg text-green-800" style={{ fontFamily: "var(--font-zen-maru-gothic)" }}>
+                    「メニューをタップするだけ」の体験を設計
+                  </h5>
+                  <p className="text-sm leading-relaxed">
+                    お問い合わせのハードルを下げるため、LINE公式アカウントを導入。Webサイトと連携させ、集客動線を構築しました。
+                    特にこだわったのは、トーク画面下部に常駐する<strong>リッチメニュー</strong>の制作です。
+                  </p>
+                  <ul className="space-y-2 bg-white/60 p-4 rounded-xl text-sm border border-green-100">
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-500 font-bold">✅</span>
+                      <span>体験レッスン予約や講師紹介へスムーズに誘導</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-500 font-bold">✅</span>
+                      <span>視覚的にわかりやすいメニューデザイン</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-500 font-bold">✅</span>
+                      <span>「まずはスタンプを」等の自動応答で心理的ハードルを低減</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
