@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
 /* themeColors from siteConfig.ts */
 :root {
   --primary: #FACC15;
@@ -8,6 +13,69 @@
   --background: #FFFBEB;
   --card: #FFFFFF;
   --subText: #94A3B8;
+  --hero-veil: rgba(255, 251, 235, 0.95);
+  --hero-veil-mid: rgba(255, 251, 235, 0.4);
+}
+
+html[data-season="spring"] {
+  --primary: #f5d76e;
+  --accent: #fb7185;
+  --background: #fff7f5;
+  --hero-veil: rgba(255, 247, 245, 0.95);
+  --hero-veil-mid: rgba(255, 247, 245, 0.4);
+}
+
+html[data-season="summer"] {
+  --primary: #fde047;
+  --accent: #f97316;
+  --background: #fffbeb;
+  --hero-veil: rgba(255, 251, 235, 0.92);
+  --hero-veil-mid: rgba(254, 243, 199, 0.35);
+}
+
+html[data-season="earlyAutumn"] {
+  --primary: #facc15;
+  --accent: #ea580c;
+  --background: #fff7ed;
+  --hero-veil: rgba(255, 247, 237, 0.95);
+  --hero-veil-mid: rgba(255, 237, 213, 0.4);
+}
+
+html[data-season="autumn"] {
+  --primary: #fbbf24;
+  --accent: #c2410c;
+  --background: #fff4e8;
+  --hero-veil: rgba(255, 244, 232, 0.95);
+  --hero-veil-mid: rgba(254, 215, 170, 0.4);
+}
+
+html[data-season="winter"] {
+  --primary: #fde68a;
+  --accent: #d97706;
+  --background: #fffbeb;
+  --hero-veil: rgba(255, 251, 235, 0.96);
+  --hero-veil-mid: rgba(254, 243, 199, 0.45);
+}
+
+.hero-veil {
+  background: radial-gradient(
+    ellipse 80% 70% at 50% 50%,
+    transparent 30%,
+    var(--hero-veil-mid) 70%,
+    var(--hero-veil) 100%
+  );
+}
+
+.season-line {
+  display: none;
+}
+
+html[data-season="spring"] .season-line[data-season-line="spring"],
+html[data-season="summer"] .season-line[data-season-line="summer"],
+html[data-season="earlyAutumn"] .season-line[data-season-line="earlyAutumn"],
+html[data-season="autumn"] .season-line[data-season-line="autumn"],
+html[data-season="winter"] .season-line[data-season-line="winter"] {
+  display: inline;
 }
 
 @theme inline {

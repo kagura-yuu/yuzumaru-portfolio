@@ -1,42 +1,44 @@
 import Image from "next/image";
-import { siteConfig, themeColors } from "@/constants/siteConfig";
+import { siteConfig } from "@/constants/siteConfig";
+import { SeasonKicker } from "@/components/SeasonKicker";
 
 export const Hero = () => {
   return (
     <section
-      className="relative flex min-h-screen items-center overflow-hidden px-6 py-20 md:px-12 md:py-24 lg:px-20"
-      style={{
-        backgroundColor: themeColors.background,
-        color: themeColors.secondary,
-      }}
+      id="top"
+      className="relative flex min-h-screen items-center overflow-hidden bg-background px-6 pb-20 pt-28 text-secondary md:px-12 md:pb-24 md:pt-32 lg:px-20"
     >
       <div
         className="absolute inset-0 opacity-25 mix-blend-multiply"
         style={{
-            backgroundImage: "url(/hero/header-bg.webp)",
+          backgroundImage: "url(/hero/header-bg.webp)",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       />
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(ellipse 80% 70% at 50% 50%, transparent 30%, rgba(255,251,235,0.4) 70%, rgba(255,251,235,0.95) 100%)",
-        }}
-      />
+      <div className="hero-veil absolute inset-0" />
 
       <div className="relative z-10 mx-auto grid w-full max-w-6xl grid-cols-1 gap-12 md:grid-cols-2 md:items-center md:gap-12">
         <div className="flex flex-col text-left">
+          <p className="mb-3 text-xs font-bold tracking-widest text-orange-500">PORTFOLIO</p>
+          <SeasonKicker />
           <h1 className="mb-4 text-3xl font-bold leading-tight md:text-4xl lg:text-5xl">
             {siteConfig.title}
           </h1>
-          <p
-            className="mb-8 max-w-lg text-base leading-relaxed md:text-lg"
-            style={{ color: themeColors.secondary }}
-          >
+          <p className="mb-8 max-w-lg text-base leading-relaxed text-secondary md:text-lg">
             {siteConfig.description}
           </p>
+          <div className="flex flex-wrap gap-2">
+            {siteConfig.categories.map((category) => (
+              <a
+                key={category.id}
+                href={`#${category.id}`}
+                className="rounded-full border border-orange-200 bg-white/80 px-4 py-1.5 text-xs font-bold text-gray-700 transition-colors hover:border-orange-400 hover:text-orange-600"
+              >
+                {category.label}
+              </a>
+            ))}
+          </div>
         </div>
 
         <div className="flex items-center justify-center md:justify-end">
