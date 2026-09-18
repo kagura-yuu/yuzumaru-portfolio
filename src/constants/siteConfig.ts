@@ -15,7 +15,7 @@ export const siteConfig = {
   description: "QAエンジニアの視点と、デザイン・Web・アプリづくりの実践をまとめたポートフォリオ。",
   url: "https://yuzumaru-works.com",
   ogImage: "/ogp.jpg",
-  keywords: ["QA Engineer", "ポートフォリオ", "Web制作", "Next.js", "LINEスタンプ", "ゆずまる", "Yuzumaru"],
+  keywords: ["QA Engineer", "ポートフォリオ", "Web制作", "Next.js", "LINEスタンプ", "たびのしおり", "ゆずまる", "Yuzumaru"],
   googleAnalyticsId: "G-XXXXXXXXXX",
   sns: {
     x: "https://x.com/YuzumaruWorks",
@@ -41,7 +41,7 @@ export const siteConfig = {
       id: "systems",
       label: "App",
       title: "アプリ・仕組み",
-      description: "家族向けアプリなど、仕組みの試作に取り組んでいます。",
+      description: "公開中のWebサービスと、絶賛開発中の家族向けアプリ。",
     },
   ],
   musicSchool: {
@@ -58,6 +58,17 @@ export const siteConfig = {
       { label: "夏のビジュアル", image: "/works/season-summer.png" },
       { label: "秋のビジュアル", image: "/works/season-autumn.jpg" },
     ],
+  },
+  tabiShiori: {
+    title: "たびのしおり",
+    url: "https://tabi-no-shiori.net",
+    launched: "2026.9.18",
+    tagline: "旅の準備から、行ったきろくまで。",
+    category: "App / 公開",
+    tech: ["React", "TypeScript", "Firebase"],
+    image: "/works/tabi-shiori-pc.jpg",
+    imageMobile: "/works/tabi-shiori-sp.jpg",
+    imageSamples: "/works/tabi-shiori-samples.jpg",
   },
   stampSeries: [
     {
