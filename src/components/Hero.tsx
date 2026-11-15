@@ -25,9 +25,17 @@ export const Hero = () => {
           <h1 className="mb-4 text-3xl font-bold leading-tight md:text-4xl lg:text-5xl">
             {siteConfig.title}
           </h1>
-          <p className="mb-8 max-w-lg text-base leading-relaxed text-secondary md:text-lg">
+          <p className="mb-6 max-w-lg text-base leading-relaxed text-secondary md:text-lg">
             {siteConfig.description}
           </p>
+          <div className="mb-8">
+            <a
+              href="#services"
+              className="inline-flex items-center gap-2 rounded-full bg-orange-500 px-6 py-3 text-sm font-bold text-white shadow-lg transition-colors hover:bg-orange-600"
+            >
+              制作のご依頼メニューを見る
+            </a>
+          </div>
           <div className="flex flex-wrap gap-2">
             {siteConfig.categories.map((category) => (
               <a

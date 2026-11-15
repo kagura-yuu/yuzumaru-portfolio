@@ -11,11 +11,11 @@ export const siteConfig = {
   name: "YuzumaruWorks",
   creatorName: "ゆずまる",
   title: "YuzumaruWorks",
-  seoTitle: "YuzumaruWorks | QAエンジニア＆クリエイターのポートフォリオ",
-  description: "QAエンジニアの視点と、デザイン・Web・アプリづくりの実践をまとめたポートフォリオ。",
+  seoTitle: "YuzumaruWorks | 受託制作とデジタル商品のクリエイター",
+  description: "QAエンジニアの視点で、LINEスタンプ制作代行・シート自動化・AI事務導入の受託制作と、Web・アプリ・デジタル商品づくりを行っています。",
   url: "https://yuzumaru-works.com",
   ogImage: "/ogp.jpg",
-  keywords: ["QA Engineer", "ポートフォリオ", "Web制作", "Next.js", "LINEスタンプ", "たびのしおり", "ゆずまる", "Yuzumaru"],
+  keywords: ["QA Engineer", "ポートフォリオ", "Web制作", "Next.js", "LINEスタンプ", "LINEスタンプ制作代行", "ココナラ", "スプレッドシート自動化", "AI事務", "知育プリント", "たびのしおり", "ゆずまる", "Yuzumaru"],
   googleAnalyticsId: "G-XXXXXXXXXX",
   sns: {
     x: "https://x.com/YuzumaruWorks",
@@ -23,7 +23,59 @@ export const siteConfig = {
     github: "https://github.com/kagura-yuu",
     note: "https://note.com/yuzumaru_works",
     lineStamp: "https://store.line.me/stickershop/author/5966269/ja",
+    booth: "https://kensho-lab.booth.pm/",
   },
+  services: [
+    {
+      id: "s1",
+      title: "LINEスタンプ制作代行 16個",
+      price: "¥12,800",
+      days: "納期目安 5日",
+      description: "ペット・お子様・オリジナルキャラクター。言葉の提案から画像制作、申請用データの作成まで。54セットの制作実績をもとにお作りします。",
+      note: "制作データの納品まで（LINEへの代理申請は含みません）",
+    },
+    {
+      id: "s2",
+      title: "家計／業務シート自動化",
+      price: "¥9,800",
+      days: "納期目安 4日",
+      description: "家計・レッスン料・売上と経費など、毎月の手集計や転記を、入力すれば自動で集計されるGoogleスプレッドシートに変えます。",
+      note: "使い方メモ付き",
+    },
+    {
+      id: "s3",
+      title: "AI事務キット導入",
+      price: "¥19,800",
+      days: "納期目安 7日",
+      description: "小規模事業者・教室向け。文字起こしや記録、お知らせ文など、毎回ゼロからやっている事務作業を決まった型で回せる形に整えます。",
+      note: "実際に試したツールの実測ベースでご案内します",
+    },
+    {
+      id: "s4",
+      title: "お試し制作",
+      price: "¥5,500",
+      days: "納期目安 3日",
+      description: "LINEスタンプ8個、または管理シート簡易版のどちらか1つ。いきなりフルセットは不安、という方向けの入口です。",
+      note: "お一人様1回まで",
+    },
+  ],
+  printProducts: [
+    {
+      title: "幼児知育プリント",
+      price: "¥680〜¥980",
+      description: "ひらがな・かず・線なぞり。シール台紙と一緒に使える、おうち学習向けの印刷データ。",
+    },
+    {
+      title: "ご褒美シール台紙セット",
+      price: "¥580〜¥880",
+      description: "お手伝い・トイレトレーニング・歯みがきなど、日常の習慣づけに使える台紙の印刷データ。",
+    },
+    {
+      title: "ピアノレッスンプリント",
+      price: "¥980〜¥1,480",
+      description: "練習チェック表・レッスン記録・月謝まわりのシート。ピアノ教室の現場の使い方をもとに設計。",
+    },
+  ],
   categories: [
     {
       id: "design",
@@ -104,6 +156,7 @@ export const siteConfig = {
 
 export const navItems = [
   { href: "#about", label: "Profile" },
+  { href: "#services", label: "Services" },
   { href: "#works", label: "Works" },
   { href: "#contact", label: "Contact" },
 ];
