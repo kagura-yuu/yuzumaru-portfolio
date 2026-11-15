@@ -10,12 +10,11 @@ export const Services = () => {
             className="text-2xl font-bold text-gray-800 md:text-3xl"
             style={{ fontFamily: "var(--font-zen-maru-gothic)" }}
           >
-            ご依頼メニュー
+            提供しているもの
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-gray-600">
-            制作のご依頼を受け付けています。受付はココナラを中心にご案内しています。
-            同時にお受けできるのは2件まで、修正は2回まで対応します。
-            まずは相談だけでも大丈夫です。
+            作っているものの一部は、制作のご依頼やダウンロード販売でも提供しています。
+            ご依頼はココナラで受け付けていて、同時にお受けできるのは2件までです。
           </p>
         </div>
 
@@ -32,9 +31,7 @@ export const Services = () => {
                 {service.title}
               </h3>
               <div className="mt-3 flex flex-wrap items-center gap-2">
-                <span className="rounded-full bg-orange-500 px-3 py-1 text-sm font-bold text-white">
-                  {service.price}
-                </span>
+                <span className="text-sm font-bold text-gray-700">{service.price}</span>
                 <span className="rounded-full bg-white px-3 py-1 text-xs font-bold text-gray-600">
                   {service.days}
                 </span>
@@ -45,17 +42,9 @@ export const Services = () => {
           ))}
         </div>
 
-        <div className="mt-10 text-center">
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 rounded-full bg-gray-800 px-6 py-3 font-bold text-white shadow-lg transition-colors hover:bg-orange-500"
-          >
-            ご相談はこちらから
-          </a>
-          <p className="mt-3 text-xs text-gray-400">
-            制作工程の一部にAIを活用しています。各サービスの詳細はお問い合わせ時にご案内します。
-          </p>
-        </div>
+        <p className="mt-8 text-center text-xs leading-relaxed text-gray-400">
+          制作工程の一部にAIを活用しています。ご依頼・ご相談は Contact からどうぞ。
+        </p>
 
         <div className="mt-16">
           <div className="mb-8 text-center">

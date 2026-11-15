@@ -54,7 +54,7 @@ export const AboutMe = () => {
               にも取り組んでいます。
               <br />
               <br />
-              このサイトは、スタンプ・Web・アプリなどの制作実績と、受託制作メニューの紹介です。
+              このサイトは、スタンプ・Web・アプリなど、これまでに手がけたものと、今やっていることの紹介です。
             </p>
             <div className="flex flex-wrap justify-center gap-4 pt-2 md:justify-start">
               <a

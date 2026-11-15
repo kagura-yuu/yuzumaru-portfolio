@@ -15,9 +15,9 @@ export const Footer = () => {
             Contact
           </h2>
           <p className="text-sm leading-relaxed text-gray-300">
-            制作のご依頼・ご相談を受け付けています。
+            何かありましたら、XのDMからお気軽にどうぞ。
             <br />
-            LINEスタンプ制作、シート自動化、AI事務導入など、まずはお気軽にメッセージをください。お取引はココナラを中心にご案内します。
+            制作のご相談もそちらで受けています（お取引はココナラを中心にご案内します）。
           </p>
           <a
             href={siteConfig.sns.twitter}
