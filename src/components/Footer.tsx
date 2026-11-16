@@ -17,7 +17,7 @@ export const Footer = () => {
           <p className="text-sm leading-relaxed text-gray-300">
             何かありましたら、XのDMからお気軽にどうぞ。
             <br />
-            制作のご相談もそちらで受けています（お取引はココナラを中心にご案内します）。
+            制作の話もそちらで受けています。詳細は各ショップやココナラをご覧ください。
           </p>
           <a
             href={siteConfig.sns.twitter}

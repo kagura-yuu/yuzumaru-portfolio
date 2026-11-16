@@ -15,6 +15,7 @@ export const JsonLd = () => {
       siteConfig.sns.note,
       siteConfig.sns.lineStamp,
       siteConfig.sns.booth,
+      siteConfig.sns.etsy,
     ],
   };
 

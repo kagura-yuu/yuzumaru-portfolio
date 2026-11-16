@@ -14,11 +14,11 @@ export default function Home() {
       <Header />
       <Hero />
       <AboutMe />
-      <Services />
       <WorksOverview />
       <StampsSection />
       <Works />
       <AppDev />
+      <Services />
       <Footer />
     </main>
   );

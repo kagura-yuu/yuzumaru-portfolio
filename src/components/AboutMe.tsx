@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { siteConfig } from "@/constants/siteConfig";
-import { FaXTwitter } from "react-icons/fa6";
+import { SnsIcon } from "@/components/SnsIcon";
 
 export const AboutMe = () => {
   return (
@@ -56,16 +56,10 @@ export const AboutMe = () => {
               <br />
               このサイトは、スタンプ・Web・アプリなど、これまでに手がけたものと、今やっていることの紹介です。
             </p>
-            <div className="flex flex-wrap justify-center gap-4 pt-2 md:justify-start">
-              <a
-                href={siteConfig.sns.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-5 py-2.5 text-sm text-gray-600 shadow-sm transition-all hover:border-blue-200 hover:bg-blue-50 hover:text-blue-500"
-              >
-                <FaXTwitter />
-                <span>X で近況を見る</span>
-              </a>
+            <div className="flex flex-wrap justify-center gap-2 pt-2 md:justify-start">
+              {siteConfig.snsBrands[0].links.map((link) => (
+                <SnsIcon key={link.label} id={link.id} href={link.href} label={link.label} />
+              ))}
             </div>
           </div>
         </div>
