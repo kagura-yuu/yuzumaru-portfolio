@@ -118,6 +118,26 @@ export const AppDev = () => {
         >
           絶賛開発中
         </h2>
+        <div className="mb-6 rounded-3xl border-2 border-orange-200 bg-white p-8 shadow-lg md:p-10">
+          <div className="mb-3 flex flex-wrap items-center gap-2">
+            <span className="rounded-full bg-orange-500 px-3 py-1 text-xs font-bold text-white">
+              絶賛開発中
+            </span>
+            <span className="rounded-full bg-orange-100 px-3 py-1 text-xs font-bold text-orange-600">
+              WEB GAME
+            </span>
+          </div>
+          <h3
+            className="text-2xl font-bold leading-tight text-gray-800 md:text-3xl"
+            style={{ fontFamily: "var(--font-zen-maru-gothic)" }}
+          >
+            マッチ3＋異世界転生パズルゲーム
+          </h3>
+          <p className="mt-3 text-sm leading-relaxed text-gray-600">
+            Webゲーム「転生薬屋マッチ3」を開発中です。マッチ3とお直しを組み合わせた、
+            異世界転生もののパズルです。ブラウザで遊べる形を目指しています。まだ未発売です。
+          </p>
+        </div>
         <div className="group relative flex flex-col items-center gap-8 rounded-3xl border-2 border-orange-200 bg-white p-8 shadow-lg md:flex-row md:gap-10 md:p-10">
           <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-yellow-200 opacity-50 mix-blend-multiply blur-3xl transition-transform duration-700 group-hover:scale-150" />
           <div className="relative mx-auto shrink-0 md:mx-0">

@@ -15,9 +15,9 @@ export const Footer = () => {
             Contact
           </h2>
           <p className="text-sm leading-relaxed text-gray-300">
-            ご相談は知人・紹介を中心とさせていただいております。
+            何かありましたら、XのDMからお気軽にどうぞ。
             <br />
-            面識のない方からのDMも、内容を確認しますので気軽にメッセージをください。
+            制作の話もそちらで受けています。詳細は各ショップやココナラをご覧ください。
           </p>
           <a
             href={siteConfig.sns.twitter}

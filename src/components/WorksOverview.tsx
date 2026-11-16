@@ -17,7 +17,7 @@ export const WorksOverview = () => {
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-gray-600">
             制作は Design / Web / App に分けてまとめています。
-            依頼を募集するページではなく、これまで形にしてきたものの記録です。
+            このサイトの中心は、これまで形にしてきたものの紹介です。
           </p>
         </div>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6">
